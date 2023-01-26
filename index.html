@@ -1,4 +1,4 @@
-
+<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
 <style>
   body {
   margin: 0;
@@ -36,6 +36,7 @@ h1 {
   <span style="border: 6px dashed #f5f4fa;padding: 2px;">💕Love You chlm💕</span>
   <br> <br>
   <span >29 days to go</span>
+  <a href="#" onclick="playSound()">play</span>
 </h1>
 
 <canvas id="birthday"></canvas>
@@ -178,6 +179,7 @@ class Firework {
   }
 }
 
+
 let canvas = document.getElementById('birthday')
 let ctx = canvas.getContext('2d')
 
@@ -199,4 +201,10 @@ document.ontouchstart = evt => birthday.onClick(evt)
   	
 
   })()
+
+  function playSound() {
+           debugger
+  document.getElementById("Music").play();
+        }
+       
 </script>
